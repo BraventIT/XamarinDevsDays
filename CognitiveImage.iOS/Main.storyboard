@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-0E-zfN" userLabel="mainView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5m-Mb-8Ra" userLabel="mainButton">
+                                        <rect key="frame" x="10" y="10" width="355" height="30"/>
+                                        <state key="normal" title="Take Photo And Get Info"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79J-0B-di1">
+                                        <rect key="frame" x="10" y="60" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="49d-Sm-lyg">
+                                        <rect key="frame" x="10" y="90.5" width="355" height="546.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="79J-0B-di1" firstAttribute="leading" secondItem="Qew-0E-zfN" secondAttribute="leading" constant="10" id="5Bn-eU-8ug"/>
+                                    <constraint firstAttribute="trailing" secondItem="W5m-Mb-8Ra" secondAttribute="trailing" constant="10" id="IwW-dU-QJZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="49d-Sm-lyg" secondAttribute="bottom" constant="10" id="MXp-jz-J5T"/>
+                                    <constraint firstItem="79J-0B-di1" firstAttribute="top" secondItem="W5m-Mb-8Ra" secondAttribute="bottom" constant="20" id="NIV-Bs-Xev"/>
+                                    <constraint firstItem="49d-Sm-lyg" firstAttribute="top" secondItem="79J-0B-di1" secondAttribute="bottom" constant="10" id="WkI-Ts-1gH"/>
+                                    <constraint firstItem="79J-0B-di1" firstAttribute="leading" secondItem="W5m-Mb-8Ra" secondAttribute="leading" id="c7A-CU-9lA"/>
+                                    <constraint firstItem="49d-Sm-lyg" firstAttribute="trailing" secondItem="W5m-Mb-8Ra" secondAttribute="trailing" id="ij7-aZ-dP1"/>
+                                    <constraint firstAttribute="trailing" secondItem="79J-0B-di1" secondAttribute="trailing" constant="10" id="nBe-99-8bB"/>
+                                    <constraint firstItem="W5m-Mb-8Ra" firstAttribute="leading" secondItem="Qew-0E-zfN" secondAttribute="leading" constant="10" id="paG-bk-6mj"/>
+                                    <constraint firstItem="49d-Sm-lyg" firstAttribute="leading" secondItem="W5m-Mb-8Ra" secondAttribute="leading" id="ptd-iA-w0W"/>
+                                    <constraint firstItem="79J-0B-di1" firstAttribute="trailing" secondItem="W5m-Mb-8Ra" secondAttribute="trailing" id="vPT-wp-whU"/>
+                                    <constraint firstItem="W5m-Mb-8Ra" firstAttribute="top" secondItem="Qew-0E-zfN" secondAttribute="top" constant="10" id="vsn-S0-KLE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5Bn-eU-8ug"/>
+                                        <exclude reference="nBe-99-8bB"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qew-0E-zfN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JBb-OJ-wAH"/>
+                            <constraint firstItem="Qew-0E-zfN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OfB-eO-VVu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qew-0E-zfN" secondAttribute="bottom" id="gBo-X6-uha"/>
+                            <constraint firstAttribute="trailing" secondItem="Qew-0E-zfN" secondAttribute="trailing" id="rSH-Gj-eaL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DescriptionLabel" destination="79J-0B-di1" id="name-outlet-79J-0B-di1"/>
+                        <outlet property="PhotoImageView" destination="49d-Sm-lyg" id="name-outlet-49d-Sm-lyg"/>
+                        <outlet property="TakePhotoButton" destination="W5m-Mb-8Ra" id="name-outlet-W5m-Mb-8Ra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="122.7886"/>
+        </scene>
+    </scenes>
+</document>
